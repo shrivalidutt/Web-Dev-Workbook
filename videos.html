@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video- HTML</title>
+
+  <style>
+    /* General body styling with pastel Japanese color scheme */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8e1e1; /* Pastel pink (Sakura) */
+      color: #4b4b4b; /* Soft gray text for readability */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Styling for the video */
+    video {
+      border: 3px solid #a6d8b3; /* Pastel mint green border */
+      border-radius: 12px; /* Rounded corners */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      margin-bottom: 20px; /* Spacing between video and iframe */
+      background-color: #ffffff; /* Light background for the video */
+    }
+
+    /* Styling for the iframe */
+    iframe {
+      border: 3px solid #ffb3c6; /* Pastel peach border */
+      border-radius: 12px; /* Rounded corners */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      background-color: #fff; /* Light background */
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      video, iframe {
+        width: 90%; /* Make the video and iframe responsive */
+      }
+    }
+  </style>
+
+</head>
+<body> 
+  <video width="400" autoplay muted controls loop>
+    <source src="KaguyaSama.mp4" type="video">
+    Sorry! Couldn't play.
+  </video>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6iEUi4bcBs4?si=c0t-kQ47FRxBIpGs" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>
+
+</body>
+</html>
