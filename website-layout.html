@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-Layout</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa; /* Light gray background for a clean look */
+    }
+
+    header {
+      background-color: #007bff; /* Corporate blue header */
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    section {
+      flex: 3;
+      padding: 20px;
+      background-color: #ffffff; /* White background for contrast */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+      border-radius: 8px;
+    }
+
+    article div {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #e9ecef; /* Light gray for block element */
+      border-radius: 4px;
+    }
+
+    article span {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: #dee2e6; /* Slightly darker gray for inline element */
+      border-radius: 4px;
+    }
+
+    aside {
+      flex: 1;
+      margin-left: 20px;
+      padding: 20px;
+      background-color: #f1f3f5; /* Light gray for sidebar */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #343a40; /* Dark gray footer */
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      aside {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <!-- define a section of a webpage that links to other parts of the website or external resources -->
+    <nav>
+
+      <!-- linking to another file -->
+      <a href="home.html">Home</a>
+
+      <!--target="" _blank" so it opens in another tab -->
+      <a href="https://google.com" target="_blank">Google</a>
+
+      <!-- add link to image -->
+      <a href="https://mangajjk.com/" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYb4peK03HOzQjQJoMhkdLHxg067PTzqgtA&s" alt="">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- page section -->
+    <section>
+       <article>
+         <!-- content goes here -->
+          <div>
+            <!-- takes 100% width -->
+            this is a div- block element
+          </div>
+          <span>
+            <!-- takes required width -->
+            this is a span- inline element 
+          </span>
+       </article>
+    </section>
+
+    <aside>
+      <!-- aside content -->
+    </aside>
+  </main>
+
+  <footer>
+    This is footer
+  </footer>
+
+</body>
+</html>
