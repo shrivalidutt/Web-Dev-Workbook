@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fffaf0; /* Light cream background */
+      color: #6b4226; /* Warm brown for text */
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-family: 'Georgia', serif;
+      color: #d2691e; /* Bakery-themed cinnamon shade */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    hr {
+      border: 0;
+      height: 3px;
+      background: linear-gradient(to right, #f8c291, #d2691e, #f8c291); /* Gradient for a warm touch */
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    ol, ul, dl {
+      text-align: left;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff8e1; /* Soft yellow background */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ol li, ul li {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    dl {
+      border-left: 4px solid #d2691e;
+      padding-left: 20px;
+    }
+
+    dt {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #8b4513; /* Deep chocolate brown */
+    }
+
+    dd {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://www.transparenttextures.com/patterns/gplay.png'); /* Subtle texture for a bakery feel */
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    li::marker {
+      color: #d2691e;
+      font-size: 1.2rem;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Lists in HTML</h1>
+  <hr>
+  <h2>Let's make pancakes!!</h2>
+  <hr>
+  <!-- ordered list: has numbering -->
+   <ol>
+    <!-- list item tag for adding things to list -->
+    <li>Mix all ingredients in a bowl until smooth.</li>
+    <li>Heat a greased pan, pour batter, and cook until bubbles appear; flip and cook the other side.</li>
+    <li>Serve with syrup or toppings of your choice</li>
+   </ol>
+
+  <!-- unordered list -->
+   <ul>
+    <li>1 cup flour</li>
+    <li>1 tablespoon sugar</li>
+    <li>1 teaspoon baking powder</li>
+    <li>1 cup milk</li>
+    <li>2 tablespoons melted butter</li>
+   </ul>
+
+  <!-- definition list -->
+   <dl>
+    <!-- definition term -->
+    <dt></dt>
+    <!-- definition data -->
+    <dd></dd>
+   </dl>
+
+</body>
+</html>
