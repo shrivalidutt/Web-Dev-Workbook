@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fdf2f8; /* Light pastel pink */
+      color: #4a4e69; /* Soft purple-gray */
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #9a8c98; /* Muted mauve */
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      padding: 20px 30px;
+      width: 90%;
+      max-width: 500px;
+      text-align: left;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      color: #6d6875; /* Softer grayish purple */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="radio"],
+    input[type="checkbox"],
+    select,
+    textarea {
+      font-family: 'Arial', sans-serif;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+      background-color: #fdf2f8; /* Light pastel pink */
+      color: #4a4e69;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: auto;
+    }
+
+    select {
+      appearance: none;
+      background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3E%3Cpath fill="%234a4e69" d="M2 0L0 2h4zm0 5L0 3h4z"/%3E%3C/svg%3E');
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
+
+    button {
+      background-color: #c9ada7; /* Muted pink */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 10px 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      background-color: #a78c8a; /* Slightly darker pink */
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #fdf2f8, #c9ada7, #fdf2f8);
+      margin-bottom: 30px;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>Forms in HTML</h1>
+  <hr>
+
+  <!-- action attribute contains the url where form's data will be submitted -->
+  <form action="submit.php">
+
+    <div>
+      <!-- for and id take the same entry to associate with each other -->
+      <label for="name">Name</label>
+      <!-- type-text, tel, email, password, date -->
+      <input id="name" type="text" placeholder="Enter name" required>
+    </div>
+
+    <div>
+      <label for="phone">Phone</label>
+      <input id="phone" type="tel" placeholder="Enter Phone no.">
+    </div>
+
+    <div>
+      <!-- dropdown options -->
+      <label for="gender">Gender</label>
+      <select name="" id="gender" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- radio buttons -->
+       <p>Subscription plan</p>
+       <!-- name=Subscription makes sure only one option is selected -->
+       <input id="basic" type="radio" name="Subscription" value="basic">
+       <label for="basic">Basic</label> 
+
+       <input id="premium" type="radio" name="Subscription" value="premium">
+       <label for="premium">Premium</label> 
+    </div>
+
+    <div>
+      <!-- checkboxes -->
+       <input id="terms" type="checkbox" required>
+       <label for="terms">I agree to terms and conditions</label>
+    </div>
+
+    <div>
+      <!-- textarea -->
+       <label for="comments">Comments</label>
+       <textarea name="" id="comments" placeholder="Enter your comments" rows="4"></textarea>
+    </div>
+
+    <div>
+      <!-- submit button -->
+       <button type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
